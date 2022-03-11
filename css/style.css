@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #333333;
+  color: #262626;
+}
+
+body .container-fluid {
+  background-color: #262626;
+  height: 6rem;
+}
+
+body .container-fluid .row .col#logo a {
+  width: 60px;
+}
+
+body .container-fluid .row .col#logo img {
+  width: 50px;
+}
+
+body .container-fluid .row .col nav ul li a {
+  color: #ededed;
+  font-size: 1rem;
+}
+
+body .container-fluid .row .col nav ul li a:hover {
+  color: #1bcfbd;
+}
+
+body .main .slider button span {
+  color: #1bcfbd;
+}
+
+body .main .slider .cover {
+  position: absolute;
+  background-color: rgba(40, 40, 40, 0.3);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+body .main .slider #text-cont {
+  background-color: rgba(240, 240, 240, 0.2);
+  width: 500px;
+  height: 200px;
+  z-index: 10;
+  left: 50%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .main .slider #text-cont h1 {
+  font-size: 1.6rem;
+  color: #1bcfbd;
+}
+
+body .main .slider #text-cont p {
+  font-size: 1.1rem;
+  color: #ededed;
+}
+
+body .main .slider img {
+  height: 700px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
