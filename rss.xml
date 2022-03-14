@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <chanel>
+        <title>Najskorija obaveštenja</title>
+        <description>Zvanične vesti Red Bull racing tima</description>
+        <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+        <item>
+            <title>Razočaranje Red Bulla</title>
+            <description>  Drugo mesto za Maxa u Džedi( trka u Saudijskoj Arabiji)</description>
+            <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+        </item>
+        <item>
+            <title>Perez bez poena u Džedi</title>
+            <description>Red Bull je posle neuspeha Pereza izgubio titulu u šampionatu konstruktora</description>
+            <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+        </item>
+        <item>
+            <title>Titula se seli u Abu Dabi</title>
+            <description>Pobedom u nedeljnoj trci Hamilton se izjednačio sa Maxom po broju bodova pred poslednju trku</description>
+            <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+        </item>
+    </chanel>
+</rss>

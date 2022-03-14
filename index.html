@@ -17,23 +17,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/86efb14479.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="container-fluid">
-        <div class="row w-75 h-100 mx-auto d-flex justify-content-between align-content-center">
-            <div class="col" id="logo">
-                <a href="index.html" class="nav-link"><img src="img/logo.png" alt="logo"/></a>
-            </div>
-            <div class="col">
-                <nav class="navbar-expand h-100">
-                    <ul class="navbar-nav h-100 d-flex align-items-center justify-content-center">
-                        <li class="nav-item m-1"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item m-1"><a class="nav-link" href="index.html">Galerija</a></li>
-                        <li class="nav-item m-1"><a class="nav-link" href="index.html">O nama</a></li>
-                        <li class="nav-item m-1"><a class="nav-link" href="index.html">Usluge</a></li>
-                        <li class="nav-item m-1"><a class="nav-link" href="index.html">O autoru</a></li>
-                    </ul>
-                </nav>
+        <div class="container h-100 w-75">
+            <div class="row h-100 mx-auto d-flex justify-content-between align-content-center">
+                <div class="col col-md-4" id="logo">
+                    <a href="index.html" class="nav-link"><img src="img/logo.png" alt="logo"/></a>
+                </div>
+                <div class="col col-md-8">
+                    <nav class="navbar-expand h-100">
+                        <ul class="navbar-nav h-100 d-flex align-items-center justify-content-end">
+                            <li class="nav-item m-1"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item m-1"><a class="nav-link" href="stranice/services.html">Services</a></li>
+                            <li class="nav-item m-1"><a class="nav-link" href="stranice/dest.html">Destinations</a></li>
+                            <li class="nav-item m-1"><a class="nav-link" href="stranice/contact.html">Contact</a></li>
+                            <li class="nav-item m-1"><a class="nav-link" href="stranice/aboutus.html">About us</a></li>
+                            <li class="nav-item m-1"><a class="nav-link" href="https://aleksandar2002.github.io/-portfolio/">Author</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -51,24 +55,16 @@
                         </div>
                         <div class="carousel-item">
                             <div class="cover"></div>
-                            <img src="img/slide3.jpg" class="d-block" alt="Third travel locations"/>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="cover"></div>
                             <img src="img/slide4.jpg" class="d-block" alt="Fourth travel locations"/>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="cover"></div>
-                            <img src="img/slide5.jpg" class="d-block " alt="Fifth travel locations"/>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
                     </button>
                     <div id="text-cont" class="container d-flex justify-content-start align-items-center flex-column p-4 position-absolute text-center  top-50 left-50">
                         <h1>Welcome to Air Mate travel agency</h1>
@@ -76,7 +72,99 @@
                     </div>
             </div>
         </div>
+        <div class="info container-fluid my-5">
+            <h2 class="h1 text-center">-Basic Information-</h2>
+            <div class="row w-75 mx-auto">
+                <div class="col col-6">
+                    <img src="img/bif4.jpg" alt="image of our Company"/>
+                </div>
+                <div class="col col-6"> 
+                    <h3>About our company</h3>
+                    <p>Our company started operating in 2002.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team container my-5 w-75">
+            <h2 class="h1 text-center">-Our team-</h2>
+            <div class="row mt-5 d-flex justify-content-between">
+                <div class="col     col-3 d-flex justify-content-start pt-4 pb-3 align-items-center flex-column">
+                    <h3>Sara Chavez</h3>
+                    <img src="img/per2.jpg" class="img-fluid rounded" alt="Direktor">
+                    <p>CEO</p>
+                </div>
+                <div class="col col-3 d-flex justify-content-start pt-4 pb-3 align-items-center flex-column">
+                    <h3>Donovan Smith</h3>
+                    <img src="img/per3.jpg" class="img-fluid rounded" alt="Owner">
+                    <p>Company owner</p>
+                </div>
+                <div class="col col-3 d-flex justify-content-start pt-4 pb-3 align-items-center flex-column">
+                    <h3>Maya Phillips</h3>
+                    <img src="img/per1.jpg" class="img-fluid rounded" alt="Chief Marketing Officer">
+                    <p>Chief Marketing Officer</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row w-75 mx-auto">
+                <div class="col col-md-4">
+                    <h2>Pages:</h2>
+                    <div class="container d-flex justify-content-center align-items-center" id="pages">
+                        <nav class="navbar-expand h-100">
+                            <ul class="navbar-nav h-100 d-flex align-items-start justify-content-start flex-column">
+                                <li class="nav-item m-1"><a class="nav-link active" href="index.html">Home</a></li>
+                                <li class="nav-item m-1"><a class="nav-link" href="stranice/services.html">Services</a></li>
+                                <li class="nav-item m-1"><a class="nav-link" href="stranice/dest.html">Destinations</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar-expand h-100">
+                            <ul class="navbar-nav h-100 d-flex align-items-start justify-content-start flex-column">
+                                <li class="nav-item m-1"><a class="nav-link" href="stranice/contact.html">Contact</a></li>
+                                <li class="nav-item m-1"><a class="nav-link" href="stranice/aboutus.html">About us</a></li>
+                                <li class="nav-item m-1"><a class="nav-link" href="https://aleksandar2002.github.io/-portfolio/">Author</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <h2>Contact</h2>
+                    <div class="container" id="contact">
+                        <p style="color:#1bcfbd">Address : </p>
+                        <p>Здравка Челара 16,11000 Београд,Србија</p>
+                        <p style="color:#1bcfbd">E-mail :</p>
+                        <p>aleksandar.kovacevic.27.21@ict.edu.rs</p>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <h2>Social Networks:</h2>
+                    <div class="container d-flex justify-content-start flex-column align-items-center" id="socials">
+                        <nav class="navbar-expand w-50">
+                            <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                                <li class="nav-item"><a class="nav-link" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://github.com"><i class="fab fa-github-alt"></i></a></li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar-expand h-100 w-50">
+                            <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                                <li class="nav-item"><a class="nav-link" href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="copy">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright &#64; Air Mate 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

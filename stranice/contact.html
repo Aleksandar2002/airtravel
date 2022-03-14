@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"/>
+    <meta name="keywords"/> 
+    <title>Air Mate</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row w-75 h-100 mx-auto d-flex justify-content-between align-content-center">
+            <div class="col" id="logo">
+                <a href="index.html" class="nav-link"><img src="img/logo.png" alt="logo"/></a>
+            </div>
+            <div class="col">
+                <nav class="navbar-expand h-100">
+                    <ul class="navbar-nav h-100 d-flex align-items-center justify-content-center">
+                        <li class="nav-item m-1"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item m-1"><a class="nav-link" href="stranice/services.html">Services</a></li>
+                        <li class="nav-item m-1"><a class="nav-link" href="stranice/dest.html">Destinations</a></li>
+                        <li class="nav-item m-1"><a class="nav-link active" href="stranice/contact.html">Contact</a></li>
+                        <li class="nav-item m-1"><a class="nav-link" href="stranice/aboutus.html">About us</a></li>
+                        <li class="nav-item m-1"><a class="nav-link" href="https://aleksandar2002.github.io/-portfolio/">Author</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item position-relative active">
+                            <div class="cover"></div>
+                            <img src="img/slide1.jpg" class="d-block " alt="First travel locations"/>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cover"></div>
+                            <img src="img/slide2.jpg" class="d-block" alt="Second travel locations"/>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cover"></div>
+                            <img src="img/slide3.jpg" class="d-block" alt="Third travel locations"/>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cover"></div>
+                            <img src="img/slide4.jpg" class="d-block" alt="Fourth travel locations"/>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="cover"></div>
+                            <img src="img/slide5.jpg" class="d-block " alt="Fifth travel locations"/>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                    <div id="text-cont" class="container d-flex justify-content-start align-items-center flex-column p-4 position-absolute text-center  top-50 left-50">
+                        <h1>Welcome to Air Mate travel agency</h1>
+                        <p class="mt-4">In the pictures you can see some of the locations we traveled to.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
