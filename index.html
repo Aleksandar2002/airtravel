@@ -16,7 +16,7 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/86efb14479.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,7 +31,7 @@
                         <ul class="navbar-nav h-100 d-flex align-items-center justify-content-end">
                             <li class="nav-item m-1"><a class="nav-link active" href="index.html">Home</a></li>
                             <li class="nav-item m-1"><a class="nav-link" href="stranice/services.html">Services</a></li>
-                            <li class="nav-item m-1"><a class="nav-link" href="stranice/dest.html">Destinations</a></li>
+                            <li class="nav-item m-1"><a class="nav-link" href="stranice/galery.html">Gallery</a></li>
                             <li class="nav-item m-1"><a class="nav-link" href="stranice/contact.html">Contact</a></li>
                             <li class="nav-item m-1"><a class="nav-link" href="stranice/aboutus.html">About us</a></li>
                             <li class="nav-item m-1"><a class="nav-link" href="https://aleksandar2002.github.io/-portfolio/">Author</a></li>
@@ -41,8 +41,8 @@
             </div>
         </div>
     </header>
-    <div class="main">
-        <div class="slider">
+    <div class="main"3 py-2>
+        <div id="slider">
             <div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item position-relative active">
@@ -72,19 +72,51 @@
                     </div>
             </div>
         </div>
-        <div class="info container-fluid my-5">
+        <div class="container-fluid my-4 px-0 pb-5" id="info">
             <h2 class="h1 text-center">-Basic Information-</h2>
-            <div class="row w-75 mx-auto">
-                <div class="col col-6">
-                    <img src="img/bif4.jpg" alt="image of our Company"/>
-                </div>
-                <div class="col col-6"> 
-                    <h3>About our company</h3>
-                    <p>Our company started operating in 2002.</p>
+            <div class="container w-75">
+                <div class="row mx-auto d-flex justify-content-between">
+                    <div class="col col-6">
+                        <img src="img/bif4.jpg" alt="image of our Company"/>
+                    </div>
+                    <div class="col col-6 d-flex justify-content-start align-items-center flex-column" id="info-text"> 
+                        <h3>About our company</h3>
+                        <p>Our company started operating in 2012. It was founded by an English businessman Donovan Smith. The company is located in London , and it's been operating for 10 years with a minimum number of dissatisfied clients.
+                            Our vision is to enable customers to fly comfortably throughout Europe.</p>
+                        <a href="stranice/aboutus.html">Read more</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="team container my-5 w-75">
+        <div class="container-fluid py-5" id="offer">
+            <h2 class="my-3">-What we offer-</h2>
+            <div class="container w-75 mt-5">
+                <div class="row mx-auto d-flex justify-content-between align-items-center">
+                    <div class="col col-4 py-2">
+                        <div class="icon-img">
+                            <i class="fas fa-info"></i>
+                        </div>
+                        <h3>Call center</h3>
+                        <p>if you want the latest flight information you can call our call center. You will get all the necessary and desired information in the shortest possible time.</p>
+                    </div>
+                    <div class="col col-3 py-2">
+                        <div class="icon-img">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Journey</h3>
+                        <p>With our company you can travel all over Europe, from the far North to the Mediterranean coast for a reasonable prices and with comfortable travel.</p>
+                    </div>
+                    <div class="col col-4 py-2">
+                        <div class="icon-img">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Online booking</h3>
+                        <p>You can book your tickets on our website, you can also look for some other things that interest you like some new destinations or travel discount.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 w-75" id="team">
             <h2 class="h1 text-center">-Our team-</h2>
             <div class="row mt-5 d-flex justify-content-between">
                 <div class="col     col-3 d-flex justify-content-start pt-4 pb-3 align-items-center flex-column">
@@ -128,10 +160,10 @@
                     </div>
                 </div>
                 <div class="col col-md-4">
-                    <h2>Contact</h2>
+                    <h2>Contact:</h2>
                     <div class="container" id="contact">
-                        <p style="color:#1bcfbd">Address : </p>
-                        <p>Здравка Челара 16,11000 Београд,Србија</p>
+                        <p style="color:#1bcfbd">Phone number : </p>
+                        <p>+381-63-7156-322</p>
                         <p style="color:#1bcfbd">E-mail :</p>
                         <p>aleksandar.kovacevic.27.21@ict.edu.rs</p>
                     </div>
