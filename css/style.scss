@@ -2,6 +2,22 @@ $svetlo-crna:#333333;
 $crna:#262626;
 $plava:#1bcfbd;
 $bela: #ededed;
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexcol {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin transition {
+        transition: .4s ease-in-out;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +26,7 @@ $bela: #ededed;
 body{
     font-family: 'Inter', sans-serif;
     background-color: $svetlo-crna;
+    scroll-behavior: smooth;
     color: $crna;
     header{
         background-color: $crna;
@@ -144,22 +161,19 @@ body{
             }
             .container{
                 .row{
-                    margin-top: 80px;
+                    margin-top: 45px;
                     margin-bottom: 10px;
                     .col{
                         background-color: $svetlo-crna;
                         box-shadow: 0px 0 20px $svetlo-crna;
                         margin: 0 1px;
                         padding: 20px;
-                        transition: .4s ease-in-out;
+                        @include transition();
                         border-radius: 6px;
-                        &:nth-child(2){
-                            transform: translateY(-20px);
-                        }   
-                        display: flex;
-                        justify-content: start;
-                        align-items: center;
-                        flex-direction: column;
+                        // &:nth-child(2){
+                        //     transform: translateY(-20px);
+                        // }   
+                        @include flexcol();
                         .icon-img{
                             color: $plava;
                             background-color: $crna;
@@ -195,8 +209,8 @@ body{
                 box-shadow: 0px 0px 20px $crna;
                 border-radius: 5px;
                 color: $bela;
-                margin: 0 20px;
-                transition: .4s ease-in-out;
+                margin: 20px 20px 0 20px;
+                @include transition();
                 &:hover{
                     transform: translateY(-20px);
                 }
@@ -210,6 +224,34 @@ body{
                 }
                 p{
                     font-size: .9rem;
+                }
+            }
+        }
+        #gallery{
+            background-color: $crna;
+            margin-top: 100px;
+            width: 90%;
+            padding: 20px;
+            h2{
+                text-align: center;
+                font-size: 2rem;
+                margin: 30px 0px 60px 0;
+                font-size: 2.3rem;
+            }
+            h3{
+                text-align: center;
+                font-size: 2rem;
+                margin: 50px 0px;
+                color: $plava;
+                font-size: 1.7rem;
+            }
+            .row{
+                .col{
+                    img{
+                        border-radius: 6px;
+                        width: 360px;
+                        box-shadow: 0 0 15px rgba(31, 31, 31 , 1);
+                    }
                 }
             }
         }
@@ -307,7 +349,31 @@ body{
             }
         }
     }
+    #scroll-arrow{
+        background-color: transparent;
+        @include flexbox();
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        position: fixed;
+        bottom: 2%;
+        right: .5%;
+        border-radius: 50%;
+        a{
+            text-decoration: none;
+            @include transition();
+            color: $plava;
+            padding: 20px;
+            font-size: 3rem;
+            transition: transform .2s ease-in-out color .4s ease-in-out;
+            &:hover{
+                color: $bela;
+                transform: translateY(-10px);
+            }
+        }
+    }
 }
+
 ::-webkit-scrollbar {
     width: 11px;
 
@@ -318,9 +384,9 @@ body{
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb {
-    background: $bela; 
     border-radius: 2px;
+    background: $plava; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: $plava; 
+    background: $bela; 
 }
