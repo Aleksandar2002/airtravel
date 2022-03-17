@@ -31,6 +31,7 @@ body{
     header{
         background-color: $crna;
         padding: 16px 0;
+        box-shadow: 0 0 15px $crna;
         .container{
             .row{
                 .col{
@@ -229,9 +230,11 @@ body{
         }
         #gallery{
             background-color: $crna;
-            margin-top: 100px;
+            margin-top: 80px;
             width: 90%;
             padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px $crna;
             h2{
                 text-align: center;
                 font-size: 2rem;
@@ -247,10 +250,45 @@ body{
             }
             .row{
                 .col{
+                    position: relative;
                     img{
                         border-radius: 6px;
-                        width: 360px;
-                        box-shadow: 0 0 15px rgba(31, 31, 31 , 1);
+                        filter: grayscale(.2);
+                        width: 100%;
+                        box-shadow: 0 0 10px $svetlo-crna;
+                    }        
+                    &:hover > .city-name{
+                        height: 100%;
+                        width: calc(100% - 24px);
+                        opacity: 1;
+                    }
+                    .city-name{
+                        background-color: rgba(38, 38, 38 , .9);  
+                        background-color: rgba(51, 51, 51 , .9);  
+                        background-color: rgba(27, 207, 189 , .6);  
+                        //background-color: rgba(237, 237, 237 , 0.2);  
+                        backdrop-filter: blur(2px);
+                        color: $svetlo-crna;
+                        width: calc(100% - 24px);
+                        opacity: 0;
+                        height: 100%;
+                        top: 0;
+                        position: absolute;
+                        z-index: 10;
+                        @include flexbox();
+                        @include transition();
+                        transition-duration: .3s;
+                        justify-content: center;
+                        border-radius: 6px;
+                        p{
+                            text-align: center;
+                            font-size: 1.15rem;
+                            padding: 5px 10px;
+                            margin: 0;
+                            background-color: $bela;
+                            border-radius: 5px;
+                            box-shadow:  0 0 5px $bela;
+                        }
                     }
                 }
             }
