@@ -217,6 +217,7 @@ body{
                 }
                 h3{
                     font-size: 1.2rem;
+                    color: $plava;
                 }
                 img{
                     width: 200px;
@@ -224,6 +225,7 @@ body{
                     filter: grayscale(.2);
                 }
                 p{
+                    color: $bela;
                     font-size: .9rem;
                 }
             }
@@ -288,6 +290,148 @@ body{
                             background-color: $bela;
                             border-radius: 5px;
                             box-shadow:  0 0 5px $bela;
+                        }
+                    }
+                }
+            }
+        }
+        #map{
+            h2{
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 58px;
+            }
+            .row{
+                .col-12{
+                    .gmap_canvas{
+                        overflow:hidden;
+                        filter:grayscale(1);
+                        height:400px;
+                        width:100%;
+                        box-shadow: 0 0 15px $crna;
+                    }
+                    .mapouter{
+                        position:relative;
+                        text-align:center;
+                        height:400px;
+                        width:80%;
+                    }
+                }
+            }
+        }
+        #contact{
+            padding: 0;
+            margin: 100px auto;
+            background-color: $crna;    
+            border-radius: 5px;
+            .row{
+                .col{
+                    #form{
+                        padding:40px 20px;
+                        @include flexcol();
+                        h3{
+                            color: $plava;
+                            text-align: center;
+                            margin-bottom: 40px;
+                        }
+                        form{
+                            width: 67%;
+                            @include flexcol();
+                            .form-floating{
+                                width: 100%;
+                                input{
+                                    background-color: transparent;
+                                    outline: none;
+                                    border: none;
+                                    border-radius: 0;
+                                    border-bottom: 1px solid $plava;
+                                    color: $plava;
+                                    width: 100%;
+                                    text-shadow: none;
+                                    cursor:text;
+                                }
+                                label{
+                                    color: $plava;
+                                }
+                            }
+                            .form-check{
+                                margin-top: 40px;
+                                label{
+                                    color: $plava;
+                                    font-weight: 300;
+                                    font-size: .8rem;
+                                }
+                                input{
+                                    background-color:$crna;
+                                    cursor: pointer;
+                                    border: 1px solid $plava;
+                                    outline: none;
+                                }
+                            }
+                            // .log-in{
+                            //     margin-top: 35px;
+                            //     @include flexbox();
+                            //     color: $plava;
+                            //     a{
+                            //         margin: 0 10px;
+                            //         cursor: pointer;
+                            //         transition: .24s ease-in-out;
+                            //         font-size: 1rem;
+                            //         padding: 1px 6px;
+                            //         border-radius:4px ;
+                            //         color: $plava;
+                            //         background-color: $crna;
+                            //         border: 1px solid $plava;
+                            //         &:hover{
+                            //             color: $crna;
+                            //             background-color: $plava;
+                            //             border: 1px solid $crna;
+                            //         }
+                            //     }
+                            //     p{
+                            //         height: 100%;
+                            //         margin: 0;
+                            //         font-size: .87rem;
+                            //     }
+                            // }
+                            .btns{
+                                margin-top: 30px;
+                                input{
+                                    background-color: $crna;
+                                    color: $plava;
+                                    border: none;
+                                    margin: 0 10px;
+                                    outline: none;
+                                    border:1px solid $plava;
+                                    padding: 5px 14px;
+                                    transition: .3s ease-in-out;
+                                    border-radius: 4px;
+                                    &:hover{
+                                        color: $crna;
+                                        background-color: #1bcfbd;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #contact-info{
+                        padding:40px 20px;
+                        background-color: $plava;
+                        width: 100%;
+                        border-radius: 0 5px 5px 0;
+                        height: 100%;
+                        @include flexcol();
+                        h3{
+                            color: $crna;
+                            text-align: center;
+                            margin-bottom: 40px;
+                        }
+                        h4{
+                            margin-top: 10px;
+                            font-size: 1.4em;
+                        }
+                        p{
+                            font-size: 1.02rem;
                         }
                     }
                 }
@@ -403,6 +547,7 @@ body{
             color: $plava;
             padding: 20px;
             font-size: 3rem;
+            display: none;
             transition: transform .2s ease-in-out color .4s ease-in-out;
             &:hover{
                 color: $bela;

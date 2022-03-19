@@ -42,6 +42,86 @@
         </div>
     </header>
     <div class="main">
+        <div class="container my-5" id="map">
+            <h2>-Contact-</h2>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-12 d-flex justify-content-center">
+                    <div class="mapouter d-flex justify-content-center">
+                        <div class="gmap_canvas">
+                            <iframe width="1200" height="430" id="gmap_canvas" src="https://maps.google.com/maps?q=ict%20college&t=&z=17&ie=UTF8&iwloc=&output=embed"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col col-lg-7 col-sm-12 col-12 col-md-12">
+                    <div class="container" id="form">
+                        <h3>-Sign up-</h3>
+                        <form action="index.html" method="post">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control shadow-none" id="floatingInput" placeholder="name@example.com"/>
+                                <label for="floatingInput">Username</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control shadow-none" id="floatingPassword" placeholder="password"/>
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="email" class="form-control shadow-none" id="floatingPassword" placeholder="email"/>
+                                <label for="floatingPassword">E-mail</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input shadow-none" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">I have read and agree to the terms of service</label>
+                            </div>
+                            <div class="btns">
+                                <input type="submit" value="Sign Up" id="sup"/>
+                                <input type="reset" value="Reset" id="rst"/>
+                            </div>
+                            <!-- <div class="log-in">
+                                <p>Already have an account?</p>
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        Sign In
+                                    </a>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-sm-12 col-12 col-md-12">
+                    <div class="container" id="contact-info">
+                        <h3>-Contact info-</h3>
+                        <h4>Address:</h4>
+                        <p>Здравка Челара 16,11000 Београд</p>
+                        <h4>Phone number:</h4>
+                        <p>+381-63-7156-322</p>
+                        <h4>E-mail:</h4>
+                        <p>aleksandar.kovacevic.27.21@ict.edu.rs</p>
+                        <h4>Website:</h4>
+                        <p>https://aleksandar2002.github.io/airtravel/</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="container-fluid">

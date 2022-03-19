@@ -232,6 +232,7 @@ body .main #team .col:hover {
 
 body .main #team .col h3 {
   font-size: 1.2rem;
+  color: #1bcfbd;
 }
 
 body .main #team .col img {
@@ -242,6 +243,7 @@ body .main #team .col img {
 }
 
 body .main #team .col p {
+  color: #ededed;
   font-size: .9rem;
 }
 
@@ -330,6 +332,171 @@ body .main #gallery .row .col .city-name p {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 5px #ededed;
           box-shadow: 0 0 5px #ededed;
+}
+
+body .main #map h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 58px;
+}
+
+body .main #map .row .col-12 .gmap_canvas {
+  overflow: hidden;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  height: 400px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px #262626;
+          box-shadow: 0 0 15px #262626;
+}
+
+body .main #map .row .col-12 .mapouter {
+  position: relative;
+  text-align: center;
+  height: 400px;
+  width: 80%;
+}
+
+body .main #contact {
+  padding: 0;
+  margin: 100px auto;
+  background-color: #262626;
+  border-radius: 5px;
+}
+
+body .main #contact .row .col #form {
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main #contact .row .col #form h3 {
+  color: #1bcfbd;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body .main #contact .row .col #form form {
+  width: 67%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main #contact .row .col #form form .form-floating {
+  width: 100%;
+}
+
+body .main #contact .row .col #form form .form-floating input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #1bcfbd;
+  color: #1bcfbd;
+  width: 100%;
+  text-shadow: none;
+  cursor: text;
+}
+
+body .main #contact .row .col #form form .form-floating label {
+  color: #1bcfbd;
+}
+
+body .main #contact .row .col #form form .form-check {
+  margin-top: 40px;
+}
+
+body .main #contact .row .col #form form .form-check label {
+  color: #1bcfbd;
+  font-weight: 300;
+  font-size: .8rem;
+}
+
+body .main #contact .row .col #form form .form-check input {
+  background-color: #262626;
+  cursor: pointer;
+  border: 1px solid #1bcfbd;
+  outline: none;
+}
+
+body .main #contact .row .col #form form .btns {
+  margin-top: 30px;
+}
+
+body .main #contact .row .col #form form .btns input {
+  background-color: #262626;
+  color: #1bcfbd;
+  border: none;
+  margin: 0 10px;
+  outline: none;
+  border: 1px solid #1bcfbd;
+  padding: 5px 14px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  border-radius: 4px;
+}
+
+body .main #contact .row .col #form form .btns input:hover {
+  color: #262626;
+  background-color: #1bcfbd;
+}
+
+body .main #contact .row .col #contact-info {
+  padding: 40px 20px;
+  background-color: #1bcfbd;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main #contact .row .col #contact-info h3 {
+  color: #262626;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body .main #contact .row .col #contact-info h4 {
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+
+body .main #contact .row .col #contact-info p {
+  font-size: 1.02rem;
 }
 
 body footer {
@@ -459,6 +626,7 @@ body #scroll-arrow a {
   color: #1bcfbd;
   padding: 20px;
   font-size: 3rem;
+  display: none;
   -webkit-transition: -webkit-transform .2s ease-in-out color .4s ease-in-out;
   transition: -webkit-transform .2s ease-in-out color .4s ease-in-out;
   transition: transform .2s ease-in-out color .4s ease-in-out;
