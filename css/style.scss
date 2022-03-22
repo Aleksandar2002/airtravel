@@ -140,13 +140,14 @@ body{
                         border: none;
                         box-shadow: 0 0 10px $crna;
                         margin-top: 30px;
-                        background-color: $plava;
-                            color: $crna;
                         border-radius: 4px;
+                        color: $plava;
                         transition: .2s ease-in-out;
+                        background-color: $svetlo-crna;
+                        border: 1px solid $plava;
                         &:hover{
-                            color: $plava;
-                        background-color: $crna;
+                            color: $crna;
+                            background-color: $plava;
                         }
                     }
                 }
@@ -230,6 +231,88 @@ body{
                 }
             }
         }
+        #service{
+            width: 100%;
+            h2{
+                text-align: center;
+                font-size: 2rem;
+            }
+            h3{
+                font-size: 1.7rem;
+                color: $plava;
+                text-align: center;
+                margin: 80px 0 50px 0 ;
+            }
+            .row{
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 0 0 10px $crna;
+                .col{
+                    overflow: hidden;
+                    margin: 0;
+                    padding: 0;
+                    h3{
+                        text-align: center;
+                        font-size: 1.37rem;
+                        color: $plava;
+                        margin: 0px 0 45px 0;
+                    }
+                    p{
+                        width: 80%;
+                        color: $bela;
+                        font-size: .97rem;
+                        text-align: center;
+                        line-height: 1.71rem;
+                    }
+                    .img-box{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            filter: grayscale(.2);
+                        }
+                        .country{
+                            position: absolute;
+                            background-color: rgba(38 ,38  , 38, .84);
+                            padding:5px 10px;
+                            border: .5px solid $plava;
+                            border-radius: 5px;
+                            @include flexbox();
+                            opacity: 1;
+                            z-index: 15;
+                            @include transition();
+                            transition-duration: .25s;
+                            p{
+                                margin: 0;
+                                color: $plava;
+                            }
+                        }
+                        .cover{
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(38 ,38  , 38, .9);
+                            position: absolute;
+                            top: 0;
+                            @include transition();
+                            transition-duration: .25s;
+                        }
+                        &:hover > .cover{
+                            background-color: rgba(51, 51, 51 , .25);
+                        }
+                        &:hover > .country{
+                            opacity: 0;
+                        }
+                    }
+                }
+                .text-box{
+                    @include flexcol();
+                    justify-content: center;
+                    background-color: $crna;
+                }
+            }
+        }
         #gallery{
             background-color: $crna;
             margin-top: 80px;
@@ -267,7 +350,7 @@ body{
                     .city-name{
                         background-color: rgba(38, 38, 38 , .9);  
                         background-color: rgba(51, 51, 51 , .9);  
-                        background-color: rgba(27, 207, 189 , .6);  
+                        background-color: rgba(27, 207, 189 , .6); 
                         //background-color: rgba(237, 237, 237 , 0.2);  
                         backdrop-filter: blur(2px);
                         color: $svetlo-crna;
@@ -279,17 +362,18 @@ body{
                         z-index: 10;
                         @include flexbox();
                         @include transition();
-                        transition-duration: .3s;
+                        transition-duration: .25s;
                         justify-content: center;
                         border-radius: 6px;
                         p{
                             text-align: center;
+                            color: $svetlo-crna;
                             font-size: 1.15rem;
                             padding: 5px 10px;
                             margin: 0;
                             background-color: $bela;
                             border-radius: 5px;
-                            box-shadow:  0 0 5px $bela;
+                            box-shadow:  0 0 3px $svetlo-crna;
                         }
                     }
                 }
@@ -432,6 +516,82 @@ body{
                         }
                         p{
                             font-size: 1.02rem;
+                        }
+                    }
+                }
+            }
+        }
+        #about-us{
+            h2{
+                text-align: center;
+                font-size: 2rem;
+            }
+            .row{
+                width: 90%;
+                margin: 80px auto;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow:  0 0 10px $crna;
+                background-color: $crna;
+                padding: 30px;
+                .col{
+                    padding: 0;
+                    margin: 0;
+                    color: $bela;
+                    &.about-text{
+                        @include flexcol();
+                        justify-content: center;
+                        h3{
+                            text-align: center;
+                            color: $plava;
+                            margin-bottom: 40px;
+                            font-size: 1.4rem;
+                        }
+                        p{
+                            width: 70%;
+                            text-align: center;
+                            font-size: .95rem;
+                            line-height: 1.6rem;
+                        }
+                    }
+                    .about-img{
+                        width: 70%;
+                        position: relative;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            filter: grayscale(.2);
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        #clients{
+            background-color: $plava;
+            .container{
+                padding: 50px 0;
+                .row{
+                    .col{
+                        @include flexbox();
+                        justify-content: center;
+                        .clients-text{
+                            margin-left: 30px;
+                            @include flexcol();
+                            justify-content: center;
+                            h3{
+                                color: $svetlo-crna;
+                                text-align: center;
+                                font-size: 1.4rem;
+                            }
+                            p{
+                                margin: 0;
+                                color: $svetlo-crna;
+                            }
+                        }
+                        i{
+                            color: $svetlo-crna;
+                            font-size: 1.6rem;
                         }
                     }
                 }
