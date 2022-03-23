@@ -31,7 +31,7 @@ body{
     header{
         background-color: $crna;
         padding: 16px 0;
-        box-shadow: 0 0 15px $crna;
+        box-shadow: 0 2px 15px $crna;
         .container{
             .row{
                 .col{
@@ -70,6 +70,7 @@ body{
             font-size: 2rem;
         }
         #slider{
+            box-shadow: 0 2px 10px $crna;
             button i{
                 font-size: 35px;
             }
@@ -156,6 +157,7 @@ body{
         #offer{
             background-color: #262626;
             color: $bela;
+            box-shadow: 0 0 12px $crna;
             h2{
                 text-align: center;
                 font-size: 2rem;
@@ -224,6 +226,7 @@ body{
                     width: 200px;
                     margin: 20px 0;
                     filter: grayscale(.2);
+                    box-shadow: 0 0 10px $crna;
                 }
                 p{
                     color: $bela;
@@ -392,9 +395,9 @@ body{
                         filter:grayscale(1);
                         height:400px;
                         width:100%;
-                        box-shadow: 0 0 15px $crna;
                     }
                     .mapouter{
+                        box-shadow: 0 0 15px $crna; 
                         position:relative;
                         text-align:center;
                         height:400px;
@@ -408,6 +411,7 @@ body{
             margin: 100px auto;
             background-color: $crna;    
             border-radius: 5px;
+            box-shadow: 0 0 10px $crna;
             .row{
                 .col{
                     #form{
@@ -533,7 +537,7 @@ body{
                 overflow: hidden;
                 box-shadow:  0 0 10px $crna;
                 background-color: $crna;
-                padding: 30px;
+                padding: 30px 0px;
                 .col{
                     padding: 0;
                     margin: 0;
@@ -569,10 +573,12 @@ body{
         }
         #clients{
             background-color: $plava;
+            box-shadow:  0 0 6px $plava;
             .container{
                 padding: 50px 0;
                 .row{
                     .col{
+                        position: relative;
                         @include flexbox();
                         justify-content: center;
                         .clients-text{
@@ -586,12 +592,90 @@ body{
                             }
                             p{
                                 margin: 0;
+                                font-size: 1.2rem;
                                 color: $svetlo-crna;
                             }
                         }
                         i{
                             color: $svetlo-crna;
                             font-size: 1.6rem;
+                        }
+                        &::after{
+                            content: '';
+                            width: 1px;
+                            height: 100% ;
+                            background-color: $svetlo-crna;
+                            position: absolute;
+                            right: 0;
+                        }
+                        &:nth-child(3)::after{
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+        #business{
+            margin-top: 90px;
+            padding: 80px 0 100px 0;
+            background-color: $crna;
+            box-shadow: 0 0 20px $crna;
+            position: relative;
+            // &::after{
+            //     content: '';
+            //     width: 70%;
+            //     height: 3px;
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 15%;
+            //     background-color: $svetlo-crna;
+            // }
+            .container{
+                h2{
+                    text-align: center;
+                    font-size: 2rem;
+                    margin-bottom: 80px;
+                }
+                .row{
+                    margin:  0 auto;
+                    .col{
+                        @include flexbox();
+                        justify-content: center;
+                        .container{
+                            box-shadow:  0 0 19px $svetlo-crna;
+                            width: 84%;
+                            background-color: $svetlo-crna;
+                            padding: 40px 20px;
+                            margin: 0;
+                            @include flexcol();
+                            justify-content: flex-end;
+                            color: $plava;
+                            height: 100%;
+                            border-radius: 5px;
+                            h3{
+                                font-size: 1.5rem;
+                            }
+                            .bus-icons{
+                                @include flexbox();
+                                justify-content: center;
+                                margin: 23px 0 ;
+                                width: 63px;
+                                height: 63px;
+                                box-shadow: 0 0 4px $plava;
+                                border-radius: 50%;
+                                background-color: $crna;
+                                i{
+                                    font-size: 1.4rem;
+                                }
+                            }
+                            p{
+                                color: $bela;
+                                width: 85%;
+                                font-size: .92rem;
+                                line-height: 1.6rem;
+                                margin-top: 20px;
+                                text-align: center;
+                            }
                         }
                     }
                 }
@@ -602,7 +686,7 @@ body{
         background-color: $crna;
         margin-top: 5rem;
         padding: 60px 0 40px 0;
-        box-shadow: 0px -1px 20px $crna;
+        box-shadow: 0px -2px 20px $crna;
         color: $bela;
         .container-fluid{
             h2{
@@ -687,7 +771,8 @@ body{
                 position: absolute;
                 transform: translateX(-50%);
                 height: 1px;
-                background-color:$plava;
+                background-color: $plava;
+                box-shadow: 0 0 4px $plava;
             }
         }
     }
