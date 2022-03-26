@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <chanel>
-        <title>Najskorija obaveštenja</title>
-        <description>Zvanične vesti Red Bull racing tima</description>
-        <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+        <title>Latest news</title>
+        <description>Official and latest company news</description>
+        <link>https://aleksandar2002.github.io/airtravel/stranice/index.html</link>
         <item>
-            <title>Razočaranje Red Bulla</title>
-            <description>  Drugo mesto za Maxa u Džedi( trka u Saudijskoj Arabiji)</description>
-            <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+            <title>The first flight to Iceland</title>
+            <description>Next month we will officially visit Iceland for the first time.</description>
+            <link>https://aleksandar2002.github.io/airtravel/stranice/service.html</link>
         </item>
         <item>
-            <title>Perez bez poena u Džedi</title>
-            <description>Red Bull je posle neuspeha Pereza izgubio titulu u šampionatu konstruktora</description>
-            <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+            <title>Discount week</title>
+            <description>This week all flights were reduced by 20%, to celebrate the company's 20th anniversary.</description>
+            <link>https://aleksandar2002.github.io/airtravel/stranice/contact.html</link>
         </item>
         <item>
-            <title>Titula se seli u Abu Dabi</title>
-            <description>Pobedom u nedeljnoj trci Hamilton se izjednačio sa Maxom po broju bodova pred poslednju trku</description>
-            <link>https://rbracing.000webhostapp.com/stranice/vesti.html</link>
+            <title>Opening of a new airport</title>
+            <description>The papers for the opening of the new airport in Paris have been signed.</description>
+            <link>https://aleksandar2002.github.io/airtravel/stranice/service.html</link>
         </item>
     </chanel>
 </rss>

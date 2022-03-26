@@ -1,0 +1,51 @@
+@media screen and (max-width: 1350px) {
+    body{
+        .main{
+            #team{
+                width: 90%!important;
+                .col{
+                    h3{
+                        font-size: 1.1rem;
+                    }
+                    p{
+                        font-size: .86rem;
+                    }
+                    &:nth-child(2) , &:nth-child(3){
+                        justify-content: center!important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024) {
+    body{
+        .main{
+                .col{
+                    h3{
+                        font-size: 1.07rem;
+                    }
+                }
+            }
+        }
+    }
+@media screen and (max-width:990px) {
+    body{
+        .main{
+            #offer{
+                .container{
+                    width: 85%!important;
+                    margin: 0 auto;
+                    .row{
+                        .col{
+                            &:nth-child(2){
+                                margin: 0 !important;
+                                height: 100%!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
