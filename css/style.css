@@ -103,6 +103,10 @@ body .main #info h2 {
   margin-bottom: 2rem;
 }
 
+body .main #info .row {
+  margin-top: 70px;
+}
+
 body .main #info .row .col:first-child {
   display: -webkit-box;
   display: -ms-flexbox;

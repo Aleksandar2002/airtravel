@@ -103,6 +103,10 @@ body .main #info h2 {
   margin-bottom: 2rem;
 }
 
+body .main #info .row {
+  margin-top: 70px;
+}
+
 body .main #info .row .col:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,6 +1096,9 @@ body #scroll-arrow a:hover {
 }
 
 @media screen and (max-width: 1350px) {
+  body .main #info .row {
+    margin-top: 5px;
+  }
   body .main #team {
     width: 90% !important;
   }
@@ -1465,7 +1472,7 @@ body #scroll-arrow a:hover {
     height: 42px;
   }
   body .main #business {
-    padding: 80px 0 80px 0;
+    padding: 80px 0 60px 0;
   }
   body .main #business .container {
     width: 100%;
