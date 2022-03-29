@@ -29,41 +29,32 @@ body{
     scroll-behavior: smooth;
     color: $crna;
     header{
-        background-color: $crna;
+        background-color: $crna!important;
         padding: 16px 0;
         box-shadow: 0 2px 15px $crna;
-        .container{
-            .row{
-                .col{
-                    &#logo{
-                        a{
-                            width: 60px;
-                        }
-                        img{
-                            width: 51px;
-                        }
-                    }
-                    nav{
-                        ul{
-                            li{
-                                a{
-                                    color: $bela;
-                                    font-size: 1rem;
-                                    &:hover{
-                                        color: $plava;
-                                    }
-                                    &.active{
-                                        color: #1bcfbd;
-                                    }
-                                }
-                            }
-                        }
-                    }
+    }
+    .navbar-dark{
+        .navbar-brand{
+            img{
+                width: 50px;
+            }
+        }
+        .navbar-nav{
+            .nav-link{
+                color: $bela;
+                font-size: .98rem;
+                margin-bottom: 0;
+                padding: 4px;
+                margin: 0 4px;
+                &:hover{
+                    color: #1bcfbd;
+                }
+                &.active{
+                    color: $plava;
                 }
             }
         }
     }
-    
     .main{
         h2{
             color: $plava;
@@ -85,7 +76,7 @@ body{
             }
             #text-cont{
                 background-color: rgba(240 ,240 ,240 ,0.2);
-                width: 500px;
+                width: 40%;
                 height:200px;
                 z-index: 10;
                 left: 50%;
@@ -112,10 +103,14 @@ body{
             padding:2rem 4rem 4rem 4rem;
             background-color: $svetlo-crna;
             h2{
-                margin-bottom:4rem;
+                margin-bottom:2rem;
             }
             .row{
                 .col{
+                    &:first-child{
+                        @include flexcol();
+                        justify-content: center;
+                    }
                     h3{
                         color: $plava;
                     }
@@ -134,6 +129,7 @@ body{
                     p{
                         line-height: 1.5rem;
                         font-size: .95rem;
+                        text-align: center;
                     }
                     a{
                         text-decoration: none;
@@ -310,6 +306,7 @@ body{
                 }
                 .text-box{
                     @include flexcol();
+                    padding: 30px 5px;
                     justify-content: center;
                     background-color: $crna;
                 }
@@ -338,6 +335,7 @@ body{
             .row{
                 .col{
                     position: relative;
+                    padding: 0 12px;
                     img{
                         border-radius: 6px;
                         filter: grayscale(.2);
@@ -407,14 +405,23 @@ body{
         }
         #contact{
             padding: 0;
+            width: 75%!important;
             margin: 100px auto;
-            background-color: $crna;    
-            border-radius: 5px;
-            box-shadow: 0 0 10px $crna;
             .row{
                 .col{
+                    &:nth-child(1){
+                        box-shadow: -1px -1px 10px $crna;
+                        border-radius: 5px 0 0 5px;
+                        background-color: $crna;    
+                    }
+                    &:nth-child(2){
+                        background-color: $plava;
+                        box-shadow: 1px 0px 10px $plava ;
+                        border-radius:0  5px 5px 0;
+                    }
+                    padding: 0;
                     #form{
-                        padding:40px 20px;
+                        padding:40px 0px;
                         @include flexcol();
                         h3{
                             color: $plava;
@@ -433,7 +440,7 @@ body{
                                     border-radius: 0;
                                     border-bottom: 1px solid $plava;
                                     color: $plava;
-                                    width: 100%;
+                                    width: 100%;    
                                     text-shadow: none;
                                     cursor:text;
                                 }
@@ -502,8 +509,7 @@ body{
                         }
                     }
                     #contact-info{
-                        padding:40px 20px;
-                        background-color: $plava;
+                        padding:40px 0px;
                         width: 100%;
                         border-radius: 0 5px 5px 0;
                         height: 100%;
@@ -606,6 +612,7 @@ body{
                             background-color: $svetlo-crna;
                             position: absolute;
                             right: 0;
+                            box-shadow: 0 0 2px $svetlo-crna;
                         }
                         &:nth-child(3)::after{
                             content: none;
@@ -647,7 +654,7 @@ body{
                             padding: 40px 20px;
                             margin: 0;
                             @include flexcol();
-                            justify-content: flex-end;
+                            justify-content: center;
                             color: $plava;
                             height: 100%;
                             border-radius: 5px;
@@ -701,7 +708,10 @@ body{
                 padding: 0;
             }
             .row{
+                width: 80%!important;
+                margin: 0px auto;
                 .col{
+                    padding: 5px 0 5px 0;
                     nav{
                         ul{
                             li{
@@ -785,6 +795,7 @@ body{
         bottom: 2%;
         right: .5%;
         border-radius: 50%;
+        text-shadow: 0 0 4px $plava;
         a{
             text-decoration: none;
             @include transition();

@@ -22,13 +22,14 @@
 <body>
     <header class="container-fluid">
         <div class="container h-100 w-75">
-            <div class="row h-100 mx-auto d-flex justify-content-between align-content-center">
-                <div class="col col-lg-4 col-12 col-sm-12" id="logo">
-                    <a href="../index.html" class="nav-link"><img src="../img/logo.png" alt="logo"/></a>
-                </div>
-                <div class="col col-md-12 col-12 col-lg-8 col-sm-12">
-                    <nav class="navbar-expand h-100">
-                        <ul class="navbar-nav h-100 d-flex align-items-center justify-content-end">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid d-flex justify-content-between">
+                    <a href="index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item m-1"><a class="nav-link" href="../index.html">Home</a></li>
                             <li class="nav-item m-1"><a class="nav-link" href="services.html">Services</a></li>
                             <li class="nav-item m-1"><a class="nav-link active" href="galery.html">Gallery</a></li>
@@ -36,9 +37,9 @@
                             <li class="nav-item m-1"><a class="nav-link" href="aboutus.html">About us</a></li>
                             <li class="nav-item m-1"><a class="nav-link" target="_blank" href="https://aleksandar2002.github.io/-portfolio/">Author</a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <div class="main">
@@ -111,8 +112,8 @@
     </div>
     <footer>
         <div class="container-fluid">
-            <div class="row w-75 mx-auto">
-                <div class="col col-lg-4 col-md-7 col-sm-12 col-12 my-2">
+            <div class="row mx-auto">
+                <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-2">
                     <h2>Pages:</h2>
                     <div class="container d-flex justify-content-center align-items-center" id="pages">
                         <nav class="navbar-expand h-100">
@@ -128,10 +129,9 @@
                                 <li class="nav-item m-1"><a class="nav-link" href="aboutus.html">About us</a></li>
                                 <li class="nav-item m-1"><a class="nav-link" target="_blank" href="https://aleksandar2002.github.io/-portfolio/">Author</a></li>
                             </ul>
-                        </nav>
                     </div>
                 </div>
-                <div class="col col-lg-4 col-md-5 col-sm-12 col-12 my-2">
+                <div class="col col-lg-4 col-md-6 col-sm-12 col-12 my-2">
                     <h2>Contact:</h2>
                     <div class="container" id="contact">
                         <p style="color:#1bcfbd">Phone number : </p>
@@ -167,9 +167,6 @@
                     <p>Copyright &#64; Air Mate 2022</p>
                 </div>
             </div>
-        </div>
-        <div id="scroll-arrow">
-            <a href="#" id="to-top"><i class="fas fa-chevron-up"></i></a>
         </div>
     </footer>
     <script>

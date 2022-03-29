@@ -1,3 +1,4 @@
+@import "style.scss";
 @media screen and (max-width: 1350px) {
     body{
         .main{
@@ -18,20 +19,165 @@
         }
     }
 }
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1200px) {
     body{
         .main{
+            #slider{
+                #text-cont{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1125px ) {
+    html{
+        font-size: .96rem;
+    }
+    body{
+        .main{
+            #offer{
+                .container{
+                    width: 92%!important;
+                    margin: 0 auto;
+                    .row{
+                        .col{
+                            height: 330px;
+                            &:nth-child(2){
+                                height: 360px;
+                            }
+                        }
+                    }
+                }
+            }
+            #service{
+                .row{
+                    .text-box{
+                        p{
+                            font-size: .92rem;
+                            line-height: 1.49rem;
+                        }
+                        h3{
+                            font-size: 1.29rem;
+                        }
+                    }
+                }
+            }
+            #clients{
+                .container{
+                    width: 85%!important;
+                    .row{
+                        .col{
+                            .clients-text{
+                                h3{
+                                    font-size: 1.23rem;
+                                }
+                                p{
+                                    font-size: 1.07rem;
+                                }
+                            }
+                            i{
+                                font-size: 1.42rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    body{
+        .main{
+            #info{
+                .row{
+                    #info-text{
+                        h3{
+                            font-size: 1.4rem;
+                        }
+                        p{
+                            font-size: .87rem;
+                        }
+                        a{
+                            padding: 5px 12px;
+                            margin-top: 25px;
+                            font-size: .94rem;
+                        }
+                    }
+                }
+            }
+            #team , #offer{
                 .col{
                     h3{
                         font-size: 1.07rem;
                     }
                 }
             }
+            #service{
+                h3{
+                    font-size: 1.5rem;
+                }
+            }
+            }
+            footer{
+                .container-fluid{
+                    .row{
+                        .col{
+                            nav{
+                                ul{
+                                    li{
+                                        a{
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-@media screen and (max-width:990px) {
+@media screen and (max-width:991px) {
+    html{
+        font-size: .95rem;
+    }
     body{
+        .navbar-dark{
+            .navbar-nav{
+                .nav-item:first-child .nav-link{
+                    padding-top:18px;
+                }
+            }
+        }
+        header{
+            padding-bottom:5px;
+            .container{
+                width: 85%!important;
+            }
+        }
         .main{
+            #info{
+                .container{
+                    width:85%!important;
+                }
+            }
+            #slider{
+                button i{
+                    font-size: 30px;
+                }
+                #text-cont{
+                    width: 60%;
+                    height: 160px;
+                    h1{
+                        font-size: 1.4rem;
+                        margin-bottom: 14px;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
             #offer{
                 .container{
                     width: 85%!important;
@@ -40,7 +186,429 @@
                         .col{
                             &:nth-child(2){
                                 margin: 0 !important;
-                                height: 100%!important;
+                                height: 330px;
+                            }
+                            &:nth-child(3){
+                                height: 270px;
+                            }
+                        }
+                    }
+                }
+            }
+            #service{
+                .row{
+                    &:nth-of-type(2){
+                            .col{
+                                &:nth-child(1){
+                                order: 2!important;
+                                } 
+                                &:nth-child(3){
+                                    order: 3!important;
+                                }
+                            }
+                            .text-box{
+                                order: 1!important;
+                            }
+                        }
+                    .text-box{
+                        padding: 30px 5px;
+                    }
+                }
+            }
+            #about-us{
+                .row{
+                    .col{
+                        &.about-text{      
+                            h3{
+                                font-size:1.33rem ;
+                            }
+                            p{
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #business{
+                .container{
+                    .row{
+                        .col{
+                            .container{
+                                padding: 40px 20px 20px 20px;
+                                h3{
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:840px) {
+    body{
+        .main{
+            #clients{
+                .container{
+                    width: 95%!important;
+                    .row{
+                        .col{
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:801px) {
+    body{
+        .main{
+            #offer{
+                .container{
+                    width: 85%!important;
+                    .row{
+                        .col{
+                            &:nth-child(2) , &:nth-child(1){
+                                height: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media screen and (max-width:767px) {
+    body{
+        .main{
+            h2{
+                font-size: 1.83rem!important;
+            }
+            #info{
+                .row{
+                    .col:nth-child(1){
+                        margin-top: 40px;
+                        @include flexbox();
+                        justify-content: center;
+                        img{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+            #offer{
+                .container{
+                    width: 100%!important;
+                    .row{
+                        .col{
+                            height: 270px!important;
+                        }
+                    }
+                }
+            }
+            #team{
+                width: 50%!important;
+            }
+            #service{
+                .row{
+                    &:nth-of-type(2){
+                        .col{
+                            &:nth-child(1){
+                            order: 1!important;
+                            } 
+                        }
+                        .text-box{
+                            order: 2!important;
+                        }
+                    }
+                    .text-box{
+                        h3{
+                            font-size: 1.22rem;
+                        }
+                        p{
+                            font-size: .9rem;
+                        }
+                    }
+                }
+            }
+            #gallery{
+                h3{
+                    font-size: 1.4rem;
+                }
+                .row{
+                    .col{
+                        .city-name{
+                            p{
+                                font-size:.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+            #map{
+                .row{
+                    width: 88%!important;
+                    margin: 0 auto;
+                    .col-12{
+                        .mapouter{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+            #about-us{
+                .row{
+                    .col{
+                        .about-img{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+            #clients{
+                .container{
+                    .row{
+                        .col{
+                            .clients-text{
+                                width: 200px;
+                                margin: 20px 14px;
+                            }
+                            &::after{
+                                width: 50%;
+                                height: 1px;
+                                left: 25%;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            #business{
+                .container{
+                    .row{
+                        .col{
+                            &:nth-child(1){
+                                margin-bottom: 30px;
+                            }
+                            &:nth-child(2){
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .container-fluid{
+                .row{
+                    .col{
+                        &:nth-child(2){
+                            margin-bottom: 28px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 680px) {
+    html{
+        font-size: .91rem;
+    }
+    body{
+        .main{
+            #slider{
+                button i{
+                    font-size: 25px;
+                }
+                #text-cont{
+                    width: 70%;
+                }
+                img{
+                    height: 540px;
+                    width: 100%;
+                }
+            }
+            #offer{
+                .container{
+                    .row{
+                        .col{
+                            height: 260px!important;
+                            h3{
+                                font-size: 1.3rem;
+                            }
+                            p{
+                                font-size: .84rem;
+                            }
+                            .icon-img{
+                                i{
+                                    font-size: 1.15rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #service{
+                h3{
+                    font-size: 1.37rem;
+                }
+            }
+        }
+        #scroll-arrow{
+            width: 50px;
+            height: 50px;
+            bottom: 1.5%;
+            right: .4%;
+            a{
+                font-size: 2.7rem;
+            }
+        }
+    }
+}
+@media screen and(max-width: 576px) {
+    body{
+        .main{
+            #contact{
+                width: 100%!important;
+                .row{
+                    .col{
+                        #contact-info{
+                            padding: 40px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    body{
+        .main{
+            #slider{
+                button i{
+                    font-size: 22px;
+                }
+                #text-cont{
+                    width: 80%;
+                    h1{
+                        font-size: 1.32rem;
+                    }
+                    p{
+                        font-size: .9rem;
+                    }
+                }
+                img{
+                    height: 500px;
+                    width: 100%;
+                }
+            }
+            #info{
+                .row{
+                    .col{
+                        img{
+                            width: 76%!important;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .container-fluid{
+                .row{
+                    width: 100%!important;
+                    .col{
+                        padding: 0!important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    body{
+        .navbar-dark{
+            .navbar-brand{
+                img{
+                    width: 43px;
+                }
+            }
+        }
+        .main{
+            h2{
+                font-size: 1.6rem!important;
+            }
+            #slider{
+                button i{
+                    font-size: 20px;
+                }
+                #text-cont{
+                    h1{
+                        font-size: 1.22rem;
+                    }
+                    p{
+                        font-size: .85rem;
+                    }
+                }
+                img{
+                    height: 430px;
+                    width: 100%;
+                }
+            }
+            #team{
+                width: 67%!important;
+            }
+        }
+    }
+}
+@media screen and (max-width:420px) {
+    html{
+        font-size: .88rem;
+    }
+    body{
+        .main{
+            #info{
+                .row{
+                    .col{
+                        img{
+                            width: 100%!important;
+                        }
+                    }
+                }
+            }
+            #offer{
+                .container{
+                    width: 85%!important;
+                    margin: 0 auto;
+                    .row{
+                        .col{
+                            height: 320px!important;
+                            .icon-img{
+                                width: 42px;
+                                height: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+            #business{
+                padding: 80px 0 80px 0;
+                .container{
+                    width: 100%;
+                    .row{
+                        .col{
+                            padding: 0;
+                            .container{
+                                h3{
+                                    font-size: 1.4rem;
+                                }
+                                p{
+                                    font-size: .9rem;
+                                    line-height: 1.55rem;
+                                }
                             }
                         }
                     }
