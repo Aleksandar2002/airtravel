@@ -1032,6 +1032,146 @@ body footer #copy:before {
           box-shadow: 0 0 4px #1bcfbd;
 }
 
+body footer #copy .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer #copy .row .col p {
+  margin-right: 40px;
+}
+
+body footer #copy .row .col:nth-child(1) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body footer #copy .row .col:nth-child(2) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body footer #copy .row .col a {
+  margin-left: 40px;
+  color: #1bcfbd;
+  background-color: transparent;
+  border: 1px solid #1bcfbd;
+  padding: 6px 10px;
+  border-radius: 4px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  -webkit-box-shadow: 0 0 3px #1bcfbd;
+          box-shadow: 0 0 3px #1bcfbd;
+}
+
+body footer #copy .row .col a:hover {
+  background-color: #1bcfbd;
+  color: #262626;
+}
+
+body #exampleModal .modal-dialog .modal-content {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #262626;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-header, body #exampleModal .modal-dialog .modal-content .modal-body, body #exampleModal .modal-dialog .modal-content .modal-footer {
+  background-color: #262626;
+  color: #1bcfbd;
+  border: none;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-header button {
+  color: #1bcfbd;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-header button p {
+  -webkit-transform: scale(2.4) rotate(45deg);
+          transform: scale(2.4) rotate(45deg);
+  text-shadow: 0 0 1px #1bcfbd;
+  margin: 0;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-header button p:hover {
+  -webkit-transform: scale(2.4) rotate(405deg);
+          transform: scale(2.4) rotate(405deg);
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-body {
+  margin: 15px 0;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-body form .form-control {
+  background-color: transparent;
+  color: #1bcfbd;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1bcfbd;
+  font-size: .9rem;
+  border-radius: 0;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-body form .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-footer button {
+  font-size: .95rem;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-footer button:first-child {
+  background-color: transparent;
+  color: #1bcfbd;
+  border: 1px solid #1bcfbd;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  -webkit-box-shadow: 0 0 3px #1bcfbd;
+          box-shadow: 0 0 3px #1bcfbd;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-footer button:first-child:hover {
+  background-color: #1bcfbd;
+  color: #333333;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-footer button:first-child:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-footer button:last-child {
+  background-color: transparent;
+  color: #1bcfbd;
+  border: 1px solid #1bcfbd;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  -webkit-box-shadow: 0 0 3px #1bcfbd;
+          box-shadow: 0 0 3px #1bcfbd;
+}
+
+body #exampleModal .modal-dialog .modal-content .modal-footer button:last-child:hover {
+  background-color: #1bcfbd;
+  color: #333333;
+}
+
 body #scroll-arrow {
   background-color: transparent;
   display: -webkit-box;

@@ -784,6 +784,113 @@ body{
                 background-color: $plava;
                 box-shadow: 0 0 4px $plava;
             }
+            .row{
+                .col{
+                    @include flexbox();
+                    p{
+                        margin-right: 40px;
+                    }
+                    &:nth-child(1){
+                        justify-content: flex-end;
+                    }
+                    &:nth-child(2){
+                        justify-content: flex-start;
+                    }
+                    a{
+                        margin-left: 40px;
+                        color: $plava;
+                        background-color: transparent;
+                        border: 1px solid $plava;
+                        padding: 6px 10px;
+                        border-radius: 4px;
+                        @include transition();
+                        box-shadow: 0 0 3px $plava;
+                        &:hover{
+                            background-color: $plava;
+                            color: $crna;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #exampleModal{
+        .modal-dialog{
+            .modal-content{
+                border-radius: 5px;
+                padding: 20px;
+                background-color: $crna;
+                .modal-header, .modal-body , .modal-footer{
+                    background-color: $crna;
+                    color:$plava;
+                    border:none;
+                }
+                .modal-header{
+                    button{
+                        color: $plava;
+                        border:  none;
+                        outline: none;
+                        background-color: transparent;
+                        p{
+                            transform: scale(2.4)
+                            rotate(45deg);
+                            text-shadow: 0 0 1px $plava;
+                            margin: 0;
+                            @include transition();
+                            transition-duration: 1s;
+                            &:hover{
+                                transform: scale(2.4)
+                                rotate(405deg);
+                            }
+                        }
+                    }
+                }
+                .modal-body{
+                    margin: 15px 0;
+                    form{
+                        .form-control{
+                            background-color: transparent;
+                            color: $plava;
+                            outline: none;
+                            border: none;
+                            border-bottom:1px solid $plava ;
+                            font-size: .9rem;
+                            border-radius: 0;
+                            &:focus{
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+                .modal-footer{
+                    button{
+                        &:first-child{
+                            background-color: transparent;
+                            color: $plava;
+                            border: 1px solid $plava;
+                            @include transition();
+                            box-shadow: 0 0 3px $plava;
+                            &:hover{
+                                background-color: $plava;
+                                color: $svetlo-crna;
+                            }
+                        }
+                        &:last-child{
+                            background-color: transparent;
+                            color: $plava;
+                            border: 1px solid $plava;
+                            @include transition();
+                            box-shadow: 0 0 3px $plava;
+                            &:hover{
+                                background-color: $plava;
+                                color: $svetlo-crna;
+                            }
+                        }
+                        font-size: .95rem;
+                    }
+                }
+            }
         }
     }
     #scroll-arrow{

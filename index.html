@@ -201,11 +201,35 @@
                     <p>Copyright &#64; Air Mate 2022</p>
                 </div>
                 <div class="col col-lg-6 col-md-6 col-12 col-sm-12">
-                    <button></button>
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Report a bug
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Report a bug</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <p>+</p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="index.html" method="post">
+                        <input type="email" name="mail" id="mail" class="form-control" placeholder="example@gmail.com"/><br/>
+                        <input type="text" name="message" id="message" class="form-control" placeholder="Problem..."/>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="scroll-arrow">
         <a href="#" id="to-top"><i class="fas fa-chevron-up"></i></a>
     </div>
