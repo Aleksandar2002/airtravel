@@ -415,6 +415,29 @@
                     }
                 }
             }
+            #copy{
+                &:before{
+                    top: -35%;
+                }
+                .row{
+                    .col{
+                        margin: 14px 0;
+                        &:nth-child(1){
+                            justify-content: center;
+                        }
+                        &:nth-child(2){
+                            justify-content: center;
+                            margin-bottom: 0!important;
+                        }
+                        a{
+                            margin-left: 0;
+                        }
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }

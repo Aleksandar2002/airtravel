@@ -1152,11 +1152,6 @@ body #exampleModal .modal-dialog .modal-content .modal-footer button:first-child
   color: #333333;
 }
 
-body #exampleModal .modal-dialog .modal-content .modal-footer button:first-child:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 body #exampleModal .modal-dialog .modal-content .modal-footer button:last-child {
   background-color: transparent;
   color: #1bcfbd;
@@ -1488,6 +1483,29 @@ body #scroll-arrow a:hover {
   }
   body footer .container-fluid .row .col:nth-child(2) {
     margin-bottom: 28px !important;
+  }
+  body footer #copy:before {
+    top: -35%;
+  }
+  body footer #copy .row .col {
+    margin: 14px 0;
+  }
+  body footer #copy .row .col:nth-child(1) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body footer #copy .row .col:nth-child(2) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0 !important;
+  }
+  body footer #copy .row .col a {
+    margin-left: 0;
+  }
+  body footer #copy .row .col p {
+    margin: 0;
   }
 }
 
